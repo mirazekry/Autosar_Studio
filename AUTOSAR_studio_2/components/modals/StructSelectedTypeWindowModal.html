@@ -1,0 +1,43 @@
+<!--Sender and Reciever Interfaces Modal-->
+<div class="modal fade" id="StructSelesctedTypeWindowsModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Struct Elements</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body pre-scrollable">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="col-12" id="wholeStructwindow">
+                            <!-- <div class="form-group"> -->
+                            <h3 id="ImplementationDataElementNameid"></h3>
+                            <!-- </div> -->
+                            <button class="btn btn-outline-primary" id="addStructDataElementid">Add Struct Data
+                                Element</button><br><br>
+                            <div class="form-group" style="display:none" id="Structdataelementform">
+                                <label> Struct Data Element Name </label>
+                                <input type="text" class="form-control" name="Structdataelement_name"
+                                    id="Structdataelement_name">
+                            </div>
+                            <br>
+
+                            <div class="form-group" id="Structdataelementformsaveclose" style="display:none">
+                                <button class="btn btn-outline-primary" id="Structclosedataelement">close</button>
+                                <button class="btn btn-outline-primary" id="Structsavedataelement">Save Struct Data
+                                    Element</button><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="StructcloseStructWindow">Close</button>
+                <button type="button" class="btn btn-success save-StructElements">Save Struct</button>
+            </div>
+        </div>
+    </div>
+</div>
