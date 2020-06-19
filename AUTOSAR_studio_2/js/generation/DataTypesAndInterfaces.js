@@ -133,19 +133,19 @@ $(document).ready(function () {
 
 					XML.Node("SHORT-NAME", StructDataElements[i].data[j].name);
 
-					for (var a = 0; a < ImplementationDataElements.length; a++) {
-						if (StructDataElements[i].data[j].type == ImplementationDataElements[a].name)
-						{
-							if((StructDataElements[i].data[j].type == ImplementationDataElements[a].name))
-							{
+					if (datatypesselected.includes(StructDataElements[i].data[j].type)) {
+						XML.Node("CATEGORY", "Value");
+					}
+
+					else {
+
+						for (var a = 0; a < ImplementationDataElements.length; a++) {
+							if (StructDataElements[i].data[j].type == ImplementationDataElements[a].name) {
 								XML.Node("CATEGORY", ImplementationDataElements[a].type);
 							}
 						}
 					}
-					if(datatypesselected.includes(StructDataElements[i].data[j].type))
-					{
-						XML.Node("CATEGORY", "Value");
-					}
+
 
 					XML.BeginNode("SW-DATA-DEF-PROPS");
 					XML.BeginNode("SW-DATA-DEF-PROPS-VARIANTS");
