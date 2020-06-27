@@ -1,6 +1,6 @@
 {
-  "name": "autosar-studio",
-  "productName": "autosar-studio",
+  "name": "Cordoba_APP_Studio",
+  "productName": "Cordoba APP Studio",
   "version": "1.0.0",
   "private": true,
   "main": "js/main.js",
